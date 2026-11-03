@@ -1,0 +1,24 @@
+# Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Generated market data and model outputs
+*.csv
+model_predictions.csv
+
+# Local orchestration state
+airflow_home/logs/
+airflow_home/airflow.cfg
+airflow_home/airflow.db
+airflow_home/simple_auth_manager_passwords.json.generated
+
+# Personal and packaged files
+Shams_Shabanli_Data_Analyst_CV.pdf
+stock-volatility-learning-hocaya.zip

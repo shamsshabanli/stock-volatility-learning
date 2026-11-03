@@ -1,0 +1,74 @@
+{
+  "model": "XGBoost XGBClassifier",
+  "train_rows": 3288,
+  "test_rows": 824,
+  "train_target_date_end": "2026-05-06",
+  "test_target_date_start": "2026-05-07",
+  "features": [
+    "daily_return",
+    "rolling_volatility",
+    "close_vs_ma20",
+    "RSI",
+    "volume_change",
+    "symbol_AAPL",
+    "symbol_AMZN",
+    "symbol_JNJ",
+    "symbol_JPM",
+    "symbol_KO",
+    "symbol_NVDA",
+    "symbol_TSLA",
+    "symbol_XOM"
+  ],
+  "label_to_id": {
+    "low": 0,
+    "medium": 1,
+    "high": 2
+  },
+  "overall": {
+    "accuracy": 0.8883495145631068,
+    "balanced_accuracy": 0.8738897502153317,
+    "macro_f1": 0.8747974006289582
+  },
+  "per_symbol": {
+    "AAPL": {
+      "test_rows": 103,
+      "accuracy": 0.9223300970873787,
+      "macro_f1": 0.9138173620591358
+    },
+    "AMZN": {
+      "test_rows": 103,
+      "accuracy": 0.8446601941747572,
+      "macro_f1": 0.830952380952381
+    },
+    "JNJ": {
+      "test_rows": 103,
+      "accuracy": 0.970873786407767,
+      "macro_f1": 0.6177239249227845
+    },
+    "JPM": {
+      "test_rows": 103,
+      "accuracy": 0.8155339805825242,
+      "macro_f1": 0.7105832109969304
+    },
+    "KO": {
+      "test_rows": 103,
+      "accuracy": 0.9223300970873787,
+      "macro_f1": 0.8499128540305011
+    },
+    "NVDA": {
+      "test_rows": 103,
+      "accuracy": 0.8932038834951457,
+      "macro_f1": 0.8753561253561254
+    },
+    "TSLA": {
+      "test_rows": 103,
+      "accuracy": 0.8932038834951457,
+      "macro_f1": 0.8850503164228654
+    },
+    "XOM": {
+      "test_rows": 103,
+      "accuracy": 0.8446601941747572,
+      "macro_f1": 0.4787961696306429
+    }
+  }
+}
